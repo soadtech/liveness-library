@@ -1,0 +1,12 @@
+.wrapper-camera {
+    position: relative;
+}
+
+.message-error {
+    position: absolute;
+    top: 5%;
+    z-index: 100;
+    left: 30%;
+    right: 30%;
+    color: white
+}

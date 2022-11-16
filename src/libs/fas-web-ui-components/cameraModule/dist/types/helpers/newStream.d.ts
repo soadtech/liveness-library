@@ -1,0 +1,16 @@
+import { PipelineResults } from "../libs/FaceDetector/FaceDetector";
+export declare const initVideo: (_modelPath: any, _probabilityThreshold: any, _videoElement: HTMLVideoElement, _canvasElement: HTMLCanvasElement, _canvasCapture: HTMLCanvasElement, _specialCanvasElement: HTMLCanvasElement, _isMultiframe: boolean, _faceDetection: boolean, _isMobile: boolean, _showMask: boolean, _closeCameraCallback: (error?: string, isError?: boolean) => void, _autoCapturingCallback: () => void, _faceDetectionErrors: (e: PipelineResults) => void, _videoStartedCallback: () => void) => void;
+export declare const initStream: (stream: any) => void;
+export declare const drawOnCanvas: () => void;
+export declare const drawMask: () => void;
+export declare const startStream: (stream: any) => void;
+export declare const pauseStream: () => void;
+export declare const startDetection: () => Promise<void>;
+export declare const playStream: () => void;
+export declare const loadingModels: (path?: string) => Promise<void>;
+export declare const callbackCapturing: () => void;
+export declare const callbackErrors: (e: any) => void;
+export declare const dropStream: (isCloseCamera?: boolean) => void;
+export declare const resolutionStream: () => void;
+export declare const getFrame: (context: any, timeout: any) => Promise<Blob>;
+export declare const takePhoto: (isMultiframe: boolean) => Promise<Blob[]>;
