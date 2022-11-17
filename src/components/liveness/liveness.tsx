@@ -160,27 +160,17 @@ function Liveness({
             }, 2000)
         }
     }, [openOnLoad])*/
+    function showLog() {
+        console.log(window)
+    }
     return (
         <>
 
             <div className="wrapper-camera">
                 {/*// @ts-ignore **/}
-                <camera-component
-                    show_mask="true"
-                    background_color="#fff"
-                    disable_control_panel="true"
-                    stop_after_capturing="false"
-                    face_detection="true"
-                    debug="false"
-                    logo_style='{"align-self": "end", "max-width": "300px"}'
-                    model_path="./libs/fas-web-ui-components/cameraModule/assets/models/"
-                    id="camera"
-                >
-                    {/*// @ts-ignore **/}
-                </camera-component>
             </div>
 
-            <button>Open camera</button>
+            <button onClick={showLog}>Open camera</button>
         </>
     );
 }
