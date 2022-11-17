@@ -1,6 +1,6 @@
 // @ts-ignore
 import React, {useState, useRef, useEffect} from 'react';
-import './index.css';
+// import './index.css';
 import {ErrorFaceMessage} from "../../interfaces/ErrorFaceMessage";
 import {ErrorFaceDetection} from "../../interfaces/ErrorFaceDetection";
 import {SuccessFaceValidation} from "../../interfaces/SuccessFaceValidation";
@@ -64,6 +64,7 @@ function Liveness({
     }
 
     // THE RESULT PRINT HERE
+    // @ts-ignore
     async function responseCapture(event: any) {
         setErrorFace({show: true, message: 'Espere un momento...'})
         const blob = event.detail[0];
