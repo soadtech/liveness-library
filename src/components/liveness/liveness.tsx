@@ -26,6 +26,7 @@ function Liveness({
                       urlServiceLiveness,
                       codeTransaction
                   }: AppProps) {
+    /*
     const [errorFace, setErrorFace] = useState<ErrorFaceMessage>({
         show: false,
         message: ''
@@ -158,12 +159,10 @@ function Liveness({
                 openCamera()
             }, 2000)
         }
-    }, [openOnLoad])
+    }, [openOnLoad])*/
     return (
         <>
-            {errorFace.show && (
-                <h5 className="message-error">{errorFace?.message}</h5>
-            )}
+
             <div className="wrapper-camera">
                 {/*// @ts-ignore **/}
                 <camera-component
@@ -176,13 +175,12 @@ function Liveness({
                     logo_style='{"align-self": "end", "max-width": "300px"}'
                     model_path="./libs/fas-web-ui-components/cameraModule/assets/models/"
                     id="camera"
-                    ref={camera}
                 >
                     {/*// @ts-ignore **/}
                 </camera-component>
             </div>
 
-            <button onClick={openCamera}>Open camera</button>
+            <button>Open camera</button>
         </>
     );
 }
